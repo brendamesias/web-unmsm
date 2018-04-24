@@ -142,6 +142,7 @@ setInterval(function(){
             eventsCloned[0].childNodes[1].childNodes[1].childNodes[1].attributes[1].nodeValue = "assets/events/" + data[i].imagen;
             eventsCloned[0].childNodes[1].childNodes[3].children[0].textContent = data[i].nombre;
             eventsCloned[0].childNodes[1].childNodes[5].children[0].textContent = data[i].fecha;
+            
             //  console.log(eventsCloned[0].childNodes[1].childNodes[3].children[0].textContent);
             
             eventsCloned.removeClass('none');
@@ -154,6 +155,12 @@ setInterval(function(){
 
                   modalCloned[0].children[0].children[0].textContent = data[i].nombre
                   modalCloned[0].children[0].children[1].children[0].attributes[1].nodeValue = "assets/events/" + data[i].imagen;
+                  modalCloned[0].children[0].children[2].children[1].textContent = data[i].fecha;
+                  modalCloned[0].children[0].children[3].children[1].textContent = data[i].hora;
+                  modalCloned[0].children[0].children[4].children[1].textContent = data[i].costo;
+                  modalCloned[0].children[0].children[5].children[1].textContent = data[i].ubicacion;
+                  modalCloned[0].children[0].children[6].textContent = data[i].descripcion;
+                  
                   // console.log(modalCloned[0].children[0].children[1].children[0].attributes[1].nodeValue)
 
                   // $('#modal1').remove();
